@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="hexo本地样式," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="我在多端部署hexo时遇到的问题">
+<meta name="keywords" content="hexo本地样式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo本地样式正常部署上去就乱了">
+<meta property="og:url" content="http://www.caihongmin.top/hexo本地样式正常部署上去就乱了.html">
+<meta property="og:site_name" content="蔡宏敏的博客">
+<meta property="og:description" content="我在多端部署hexo时遇到的问题">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABCCAYAAAC8RY+hAAAAAXNSR0IArs4c%0A6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAT2SURB%0AVHhe7Vw7cuJAEG35As58AnDg8gnECWATR5uSQTkyCdmGmzkRiasgsm+wEZzA%0AnMDlwOICduQbaGc0ktAXZoQKd1c9VVG2Rc/Mm/dab3pkgff9/R0RDjDQkoHL%0Ay8u4pff8/IxEakkimhGNx2OTSPf390gkZERrBp6enkwifX5+RldXV/T19UX6%0AJw4w0IaBi3wS6WTCAQbaMHCROhEcqQ19aJMyAEdCLnTCABypExrRCRwJOdAJ%0AA3CkTmhEJ3Ak5EAnDMCROqERnTQ60m4xIM/z6l/TTcZc13GQRCYDuLMtUzd2%0AqFEjsZNEJiDUSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjhxqOxE4S%0AmYDgSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjh7rZkXYLGuT/+z9Y%0A0I4dfFtAO1oMPBosfmYGm2n1KQpnLMz1aHak3gO9RhFFUUiBbysY17iQ3rdE%0A2/fw7AD1YzajlU9BqLncv14fem5YmOuBGslNTufoUGcw3dK1Y944D/TDDU6u%0AkeofbJtS9uhboyVvaNq0dJbbeAPKr0r5pcI8Y2eWrvRBvP2ykZ4f0UqHrUaF%0AB/Xql5cUV3FMV51SXkZmYBo1zPUof64D6/jNtPaBxPJ8q2PndHMdV9ltpD+2%0Anf8Z/5EdYaSWtoj8IAqLbzT+tZ6oeJpE63IfhXPqzTCI1KoZ+cr30yMMfP1d%0ABEfPRetJHDfZD1Lbn+l3HU1ULBWCm+AnseRHOViWM6+GVbk43tXhNkf0sOTF%0AjFHkr+7ccbQmgg4nkQ5xTySTDCUhkgnukybpt5BczYJXyLUkzD2RbKmzi2uT%0ASLX82V7YCS86ScoXZNZFRYvsMnY2jbRlBzVScVnRy0t/puuC0jFckiKVtrOx%0AWaY2j6TD/GBOwzR090Fv6vfJXXYm62R4pxqrJeLf/nFxV/NlGm/Jny36hOc0%0AfDvrJ8vcfqnefWiWtRbpe2lZ0I81UbsSct2WnFgj6XpCDU4BqcUp25WoK6p2%0A2sN5QD5tafa4oMVfXTxM6E/N7uXto7pNN5P36aZvy6iEODf+bGc0XBZ3iEYP%0AxfvY3MLpXd/GXamVvrCT1CuUeS33F7floKc5UuIg/u9flG1KVKFX60gakNrC%0AvuhJrWZVN8q9r6+UQmGY9OkHL5TlXf9GpVX+UFf2eKboqjv6dFPO7aSgrxbc%0A3RTbVvy78mfRabwRKd3z6z38UZesOm6vjU7DeXxLZzUqbSiyTU6Loru+Rkrr%0AF7POVl75wru0JuuifJ0UzHG7SoGb1EGHivekCN+P21D4FsZWMWtTvB8cNz+f%0A2uK7m2I7LVxr+cuPa8WfvR5N4+Y3NOWNTRFju02Gpzs951fb6C2ndixtq8tq%0AKWRxzSGEIwMn1kiuU9rQo6mwaY4kciWPdfxpNZLt1LK1N7kxaNsOcWIYwCdt%0AxUjFG+h5HIk3B0DXAQNnrpE6QIwuWDIAR2IpizxQcCR5mrFEDEdiKYs8UHAk%0AeZqxRAxHYimLPFBwJHmasUQMR2IpizxQcCR5mrFEjG+1ZSmLPFD4X5s8zVgi%0ARo3EUhZ5oFAjydOMJWI4EktZ5IGCI8nTjCViOBJLWeSBgiPJ04wl4vhTJCyR%0AAZQoBi5EoQVYtgwgkdhKIwsYEkmWXmzRIpHYSiMLGBJJll5s0SKR2EojCxgS%0ASZZebNH+Bwf3x21xabxVAAAAAElFTkSuQmCC">
+<meta property="og:updated_time" content="2018-05-28T13:44:56.898Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo本地样式正常部署上去就乱了">
+<meta name="twitter:description" content="我在多端部署hexo时遇到的问题">
+<meta name="twitter:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABCCAYAAAC8RY+hAAAAAXNSR0IArs4c%0A6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAT2SURB%0AVHhe7Vw7cuJAEG35As58AnDg8gnECWATR5uSQTkyCdmGmzkRiasgsm+wEZzA%0AnMDlwOICduQbaGc0ktAXZoQKd1c9VVG2Rc/Mm/dab3pkgff9/R0RDjDQkoHL%0Ay8u4pff8/IxEakkimhGNx2OTSPf390gkZERrBp6enkwifX5+RldXV/T19UX6%0AJw4w0IaBi3wS6WTCAQbaMHCROhEcqQ19aJMyAEdCLnTCABypExrRCRwJOdAJ%0AA3CkTmhEJ3Ak5EAnDMCROqERnTQ60m4xIM/z6l/TTcZc13GQRCYDuLMtUzd2%0AqFEjsZNEJiDUSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjhxqOxE4S%0AmYDgSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjh7rZkXYLGuT/+z9Y%0A0I4dfFtAO1oMPBosfmYGm2n1KQpnLMz1aHak3gO9RhFFUUiBbysY17iQ3rdE%0A2/fw7AD1YzajlU9BqLncv14fem5YmOuBGslNTufoUGcw3dK1Y944D/TDDU6u%0AkeofbJtS9uhboyVvaNq0dJbbeAPKr0r5pcI8Y2eWrvRBvP2ykZ4f0UqHrUaF%0AB/Xql5cUV3FMV51SXkZmYBo1zPUof64D6/jNtPaBxPJ8q2PndHMdV9ltpD+2%0Anf8Z/5EdYaSWtoj8IAqLbzT+tZ6oeJpE63IfhXPqzTCI1KoZ+cr30yMMfP1d%0ABEfPRetJHDfZD1Lbn+l3HU1ULBWCm+AnseRHOViWM6+GVbk43tXhNkf0sOTF%0AjFHkr+7ccbQmgg4nkQ5xTySTDCUhkgnukybpt5BczYJXyLUkzD2RbKmzi2uT%0ASLX82V7YCS86ScoXZNZFRYvsMnY2jbRlBzVScVnRy0t/puuC0jFckiKVtrOx%0AWaY2j6TD/GBOwzR090Fv6vfJXXYm62R4pxqrJeLf/nFxV/NlGm/Jny36hOc0%0AfDvrJ8vcfqnefWiWtRbpe2lZ0I81UbsSct2WnFgj6XpCDU4BqcUp25WoK6p2%0A2sN5QD5tafa4oMVfXTxM6E/N7uXto7pNN5P36aZvy6iEODf+bGc0XBZ3iEYP%0AxfvY3MLpXd/GXamVvrCT1CuUeS33F7floKc5UuIg/u9flG1KVKFX60gakNrC%0AvuhJrWZVN8q9r6+UQmGY9OkHL5TlXf9GpVX+UFf2eKboqjv6dFPO7aSgrxbc%0A3RTbVvy78mfRabwRKd3z6z38UZesOm6vjU7DeXxLZzUqbSiyTU6Loru+Rkrr%0AF7POVl75wru0JuuifJ0UzHG7SoGb1EGHivekCN+P21D4FsZWMWtTvB8cNz+f%0A2uK7m2I7LVxr+cuPa8WfvR5N4+Y3NOWNTRFju02Gpzs951fb6C2ndixtq8tq%0AKWRxzSGEIwMn1kiuU9rQo6mwaY4kciWPdfxpNZLt1LK1N7kxaNsOcWIYwCdt%0AxUjFG+h5HIk3B0DXAQNnrpE6QIwuWDIAR2IpizxQcCR5mrFEDEdiKYs8UHAk%0AeZqxRAxHYimLPFBwJHmasUQMR2IpizxQcCR5mrFEjG+1ZSmLPFD4X5s8zVgi%0ARo3EUhZ5oFAjydOMJWI4EktZ5IGCI8nTjCViOBJLWeSBgiPJ04wl4vhTJCyR%0AAZQoBi5EoQVYtgwgkdhKIwsYEkmWXmzRIpHYSiMLGBJJll5s0SKR2EojCxgS%0ASZZebNH+Bwf3x21xabxVAAAAAElFTkSuQmCC">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.caihongmin.top/hexo本地样式正常部署上去就乱了.html"/>
+
+
+
+
+
+  <title>hexo本地样式正常部署上去就乱了 | 蔡宏敏的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/zhibeiyou"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://pbabwwx9a.bkt.clouddn.com/foke.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">蔡宏敏的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>	  
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.caihongmin.top/hexo本地样式正常部署上去就乱了.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CHM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar1.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蔡宏敏的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo本地样式正常部署上去就乱了</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T00:06:14+08:00">
+                2018-05-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+			
+			
+          
+             <span id="/hexo本地样式正常部署上去就乱了.html" class="leancloud_visitors" data-flag-title="hexo本地样式正常部署上去就乱了">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+			
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
+                    <span itemprop="name">搭建博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+		  
+
+          
+            
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye">浏览数</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  205 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>我在多端部署hexo时遇到的问题<br> <a id="more"></a></p>
+<h3 id="主要原因是你的用户名与你所创建的项目名不一致"><a href="#主要原因是你的用户名与你所创建的项目名不一致" class="headerlink" title="主要原因是你的用户名与你所创建的项目名不一致"></a>主要原因是你的用户名与你所创建的项目名不一致</h3><ol>
+<li><p>如下是hexo根目录下的配置文件_config.yml中deploy下的部分代码：</p>
+<pre><code>repo:
+github: git@github.com:zhibeiyou/zhibeiyou.github.io.git,master
+coding: git@git.coding.net:mgtx/mgtx.git,master
+</code></pre></li>
+<li><p>其中zhibeiyou既是我git的用户名也是项目名，<br>mgtx既是我coding的用户名也是项目名。<br>无论在哪个平台搞hexo，请保证用户名与项目名一致。</p>
+</li>
+</ol>
+<hr>
+<p> <strong> 附：不让hexo模板加载，只需在相应的文件头加入如下所示</strong></p>
+<p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABCCAYAAAC8RY+hAAAAAXNSR0IArs4c%0A6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAT2SURB%0AVHhe7Vw7cuJAEG35As58AnDg8gnECWATR5uSQTkyCdmGmzkRiasgsm+wEZzA%0AnMDlwOICduQbaGc0ktAXZoQKd1c9VVG2Rc/Mm/dab3pkgff9/R0RDjDQkoHL%0Ay8u4pff8/IxEakkimhGNx2OTSPf390gkZERrBp6enkwifX5+RldXV/T19UX6%0AJw4w0IaBi3wS6WTCAQbaMHCROhEcqQ19aJMyAEdCLnTCABypExrRCRwJOdAJ%0AA3CkTmhEJ3Ak5EAnDMCROqERnTQ60m4xIM/z6l/TTcZc13GQRCYDuLMtUzd2%0AqFEjsZNEJiDUSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjhxqOxE4S%0AmYDgSDJ1Y4cajsROEpmA4EgydWOHGo7EThKZgOBIMnVjh7rZkXYLGuT/+z9Y%0A0I4dfFtAO1oMPBosfmYGm2n1KQpnLMz1aHak3gO9RhFFUUiBbysY17iQ3rdE%0A2/fw7AD1YzajlU9BqLncv14fem5YmOuBGslNTufoUGcw3dK1Y944D/TDDU6u%0AkeofbJtS9uhboyVvaNq0dJbbeAPKr0r5pcI8Y2eWrvRBvP2ykZ4f0UqHrUaF%0AB/Xql5cUV3FMV51SXkZmYBo1zPUof64D6/jNtPaBxPJ8q2PndHMdV9ltpD+2%0Anf8Z/5EdYaSWtoj8IAqLbzT+tZ6oeJpE63IfhXPqzTCI1KoZ+cr30yMMfP1d%0ABEfPRetJHDfZD1Lbn+l3HU1ULBWCm+AnseRHOViWM6+GVbk43tXhNkf0sOTF%0AjFHkr+7ccbQmgg4nkQ5xTySTDCUhkgnukybpt5BczYJXyLUkzD2RbKmzi2uT%0ASLX82V7YCS86ScoXZNZFRYvsMnY2jbRlBzVScVnRy0t/puuC0jFckiKVtrOx%0AWaY2j6TD/GBOwzR090Fv6vfJXXYm62R4pxqrJeLf/nFxV/NlGm/Jny36hOc0%0AfDvrJ8vcfqnefWiWtRbpe2lZ0I81UbsSct2WnFgj6XpCDU4BqcUp25WoK6p2%0A2sN5QD5tafa4oMVfXTxM6E/N7uXto7pNN5P36aZvy6iEODf+bGc0XBZ3iEYP%0AxfvY3MLpXd/GXamVvrCT1CuUeS33F7floKc5UuIg/u9flG1KVKFX60gakNrC%0AvuhJrWZVN8q9r6+UQmGY9OkHL5TlXf9GpVX+UFf2eKboqjv6dFPO7aSgrxbc%0A3RTbVvy78mfRabwRKd3z6z38UZesOm6vjU7DeXxLZzUqbSiyTU6Loru+Rkrr%0AF7POVl75wru0JuuifJ0UzHG7SoGb1EGHivekCN+P21D4FsZWMWtTvB8cNz+f%0A2uK7m2I7LVxr+cuPa8WfvR5N4+Y3NOWNTRFju02Gpzs951fb6C2ndixtq8tq%0AKWRxzSGEIwMn1kiuU9rQo6mwaY4kciWPdfxpNZLt1LK1N7kxaNsOcWIYwCdt%0AxUjFG+h5HIk3B0DXAQNnrpE6QIwuWDIAR2IpizxQcCR5mrFEDEdiKYs8UHAk%0AeZqxRAxHYimLPFBwJHmasUQMR2IpizxQcCR5mrFEjG+1ZSmLPFD4X5s8zVgi%0ARo3EUhZ5oFAjydOMJWI4EktZ5IGCI8nTjCViOBJLWeSBgiPJ04wl4vhTJCyR%0AAZQoBi5EoQVYtgwgkdhKIwsYEkmWXmzRIpHYSiMLGBJJll5s0SKR2EojCxgS%0ASZZebNH+Bwf3x21xabxVAAAAAElFTkSuQmCC" alt=""></p>
+<p> <strong> 这个在百度收录网站时，我们选择html验证，在baidu_verify_McF0lk2UPu.html<br> 中文件头加入以上代码，就不会被hexo模板默认加载所干扰，也就可以通过网站验证了。 </strong></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/基础/" rel="tag"># 基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/修改hexo的ico图标.html" rel="next" title="修改hexo的ico图标">
+                <i class="fa fa-chevron-left"></i> 修改hexo的ico图标
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/站在岸上的鱼.html" rel="prev" title="站在岸上的鱼(之英语)">
+                站在岸上的鱼(之英语) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTg1Mi8xMjM4OA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar1.gif"
+                alt="CHM" />
+            
+              <p class="site-author-name" itemprop="name">CHM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要原因是你的用户名与你所创建的项目名不一致"><span class="nav-number">1.</span> <span class="nav-text">主要原因是你的用户名与你所创建的项目名不一致</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+	  
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CHM</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">3.2k</span>
+  
+</div>
+ 
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">
+  <span>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span>
+  </div>
+
+
+
+ 
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">访客数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye">阅读数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+  
+  <!-- custom analytics part create by xiamo -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("KlvXWMqXpa80b7HqawPGStVE-gzGzoHsz", "dbVI115MCydihMGw9FRk6piq");</script>
+<script>
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+	$(".leancloud_visitors").each(function() {
+		var url = $(this).attr("id").trim();
+		query.equalTo("url", url);
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {
+					var content = '0 ' + $(document.getElementById(url)).text();
+					$(document.getElementById(url)).text(content);
+					return;
+				}
+				for (var i = 0; i < results.length; i++) {
+					var object = results[i];
+					var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+					$(document.getElementById(url)).text(content);
+				}
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+
+	});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else if ($('.post-title-link').length > 1) {
+		showTime(Counter);
+	}
+}); 
+</script>
+  
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("KlvXWMqXpa80b7HqawPGStVE-gzGzoHsz", "dbVI115MCydihMGw9FRk6piq");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+	<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>
+
