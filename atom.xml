@@ -130,11 +130,11 @@
     
       <category term="hexo" scheme="http://www.caihongmin.top/tags/hexo/"/>
     
-      <category term="基础" scheme="http://www.caihongmin.top/tags/%E5%9F%BA%E7%A1%80/"/>
-    
       <category term="github" scheme="http://www.caihongmin.top/tags/github/"/>
     
       <category term="npm" scheme="http://www.caihongmin.top/tags/npm/"/>
+    
+      <category term="基础" scheme="http://www.caihongmin.top/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
