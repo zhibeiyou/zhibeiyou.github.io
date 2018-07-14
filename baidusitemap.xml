@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://www.caihongmin.top/%E6%90%AD%E5%BB%BAhexo%E8%AE%B0%E5%BD%95-1.html</loc>
+    <lastmod>2018-07-14T12:24:17.375Z</lastmod>
+    <data>
+        <display>
+        <title>使用hexo+GitHub搭建博客记录</title>
+        <pubTime>2018-04-25T10:50:37.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>npm</tag>
+         
+        <tag>基础</tag>
+         
+         
+           
+             
+              <breadCrumb title="搭建博客" url="http://www.caihongmin.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.caihongmin.top/%E7%AB%99%E5%9C%A8%E5%B2%B8%E4%B8%8A%E7%9A%84%E9%B1%BC.html</loc>
     <lastmod>2018-07-14T11:34:23.438Z</lastmod>
     <data>
@@ -17,32 +43,6 @@
            
              
               <breadCrumb title="英语" url="http://www.caihongmin.top/categories/%E8%8B%B1%E8%AF%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.caihongmin.top/%E6%90%AD%E5%BB%BAhexo%E8%AE%B0%E5%BD%95-1.html</loc>
-    <lastmod>2018-07-01T08:18:35.604Z</lastmod>
-    <data>
-        <display>
-        <title>使用hexo+GitHub搭建博客记录</title>
-        <pubTime>2018-04-25T10:50:37.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>基础</tag>
-         
-        <tag>github</tag>
-         
-        <tag>npm</tag>
-         
-         
-           
-             
-              <breadCrumb title="搭建博客" url="http://www.caihongmin.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
