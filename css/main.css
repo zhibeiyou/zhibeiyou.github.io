@@ -1941,7 +1941,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f52d62;
+  background: #ff9c79;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3023,17 +3023,6 @@ hr {
     text-align: center;
   }
 }
-.bg_content {
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-#canvas {
-  width: 100%;
-  height: 100%;
-}
 .header {
   background: transparent;
 }
@@ -3043,6 +3032,6 @@ hr {
 body {
   background-image: url("/images/background.png");
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
 }
